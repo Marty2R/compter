@@ -5,7 +5,7 @@ export default function Home() {
   const [count, setCount] = useState(0);
 
   function addOne() {
-    setCount(count + 1);
+    count >= 10 ? false : setCount(count + 1);
   }
 
   function deleteOne() {
