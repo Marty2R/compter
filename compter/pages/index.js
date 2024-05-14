@@ -9,7 +9,9 @@ export default function Home() {
   }
 
   function deleteOne() {
-    setCount(count - 1);
+    if (count > 0) {
+      setCount(count - 1);
+    }
   }
 
   function reset() {
@@ -26,7 +28,7 @@ export default function Home() {
       </Head>
       <main>
         <div className="content">
-          <h1>Compter</h1>
+          <h1>Counter</h1>
           <div>
             <span>{count}</span>
           </div>
